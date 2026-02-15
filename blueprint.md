@@ -26,15 +26,15 @@ Este es un sitio web de portafolio personal de una sola página, moderno y visua
 *   **Assets:**
     *   Imágenes SVG utilizadas para íconos y fondos, ubicadas en `src/assets/` y `public/`.
 
-## Plan Actual
+## Plan Completado: Subida a GitHub
 
 **Objetivo:** Subir el proyecto a un repositorio de GitHub.
 
-**Pasos:**
+**Pasos Realizados:**
 
-1.  ✅ **Crear `blueprint.md`:** Documentar la visión general, el esquema y el plan actual del proyecto.
-2.  **Inicializar Git:** Preparar el proyecto para el control de versiones con Git.
-3.  **Crear `.gitignore`:** Asegurarse de que los archivos innecesarios (como `node_modules`) no se incluyan en el repositorio.
-4.  **Commit Inicial:** Crear el primer guardado (commit) del estado del proyecto.
-5.  **Conectar Remoto:** Esperar la URL del repositorio de GitHub del usuario.
-6.  **Subir a GitHub:** Añadir la URL remota y empujar el commit inicial a GitHub.
+1.  ✅ **Crear `blueprint.md`:** Se documentó la visión general, el esquema y el plan del proyecto.
+2.  ✅ **Inicializar Git:** Se preparó el proyecto para el control de versiones.
+3.  ✅ **Crear `.gitignore`:** Se aseguró que los archivos innecesarios no se incluyan en el repositorio.
+4.  ✅ **Commit Inicial:** Se creó el primer guardado (commit) del estado del proyecto.
+5.  ✅ **Conectar Remoto:** Se añadió la URL del repositorio de GitHub del usuario.
+6.  ✅ **Subir a GitHub:** Se empujó el commit inicial a la rama `main` del repositorio remoto.
