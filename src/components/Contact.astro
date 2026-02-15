@@ -1,0 +1,259 @@
+---
+// Contact section
+---
+
+<section id="contacto" class="contact">
+	<div class="container">
+		<div class="section-header">
+			<h2>Contáctenos</h2>
+			<p>Estamos listos para atender sus necesidades hidráulicas</p>
+		</div>
+
+		<div class="contact-content">
+			<div class="contact-info">
+				<h3>Información de Contacto</h3>
+				<p class="contact-intro">
+					Comuníquese con nosotros para solicitar una cotización o agendar un servicio.
+					Nuestro equipo está disponible para atenderle.
+				</p>
+
+				<div class="info-items">
+					<div class="info-item">
+						<div class="info-icon">📞</div>
+						<div>
+							<strong>Teléfono</strong>
+							<p>+1 (555) 123-4567</p>
+						</div>
+					</div>
+
+					<div class="info-item">
+						<div class="info-icon">📧</div>
+						<div>
+							<strong>Email</strong>
+							<p>contacto@jypservicios.com</p>
+						</div>
+					</div>
+
+					<div class="info-item">
+						<div class="info-icon">📍</div>
+						<div>
+							<strong>Ubicación</strong>
+							<p>Servicio en toda el área metropolitana</p>
+						</div>
+					</div>
+
+					<div class="info-item">
+						<div class="info-icon">🕐</div>
+						<div>
+							<strong>Horario</strong>
+							<p>Lunes a Sábado: 8:00 AM - 6:00 PM</p>
+							<p>Emergencias 24/7</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact-form-wrapper">
+				<form class="contact-form">
+					<div class="form-group">
+						<label for="name">Nombre Completo</label>
+						<input type="text" id="name" name="name" required />
+					</div>
+
+					<div class="form-group">
+						<label for="email">Correo Electrónico</label>
+						<input type="email" id="email" name="email" required />
+					</div>
+
+					<div class="form-group">
+						<label for="phone">Teléfono</label>
+						<input type="tel" id="phone" name="phone" required />
+					</div>
+
+					<div class="form-group">
+						<label for="service">Servicio de Interés</label>
+						<select id="service" name="service" required>
+							<option value="">Seleccione un servicio</option>
+							<option value="instalacion">Instalación de Sistemas</option>
+							<option value="mantenimiento">Mantenimiento Preventivo</option>
+							<option value="reparacion">Reparación de Tuberías</option>
+							<option value="bombas">Bombas de Agua</option>
+							<option value="drenaje">Sistemas de Drenaje</option>
+							<option value="asesoria">Asesoría Técnica</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="message">Mensaje</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+					</div>
+
+					<button type="submit" class="submit-button">Enviar Mensaje</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.contact {
+		background: var(--color-dark);
+		padding: 6rem 0;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.section-header h2 {
+		font-size: 3rem;
+		color: #ffffff;
+		margin-bottom: 1rem;
+	}
+
+	.section-header p {
+		font-size: 1.25rem;
+		color: #a0c4e8;
+	}
+
+	.contact-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+	}
+
+	.contact-info h3 {
+		font-size: 1.75rem;
+		color: #ffffff;
+		margin-bottom: 1rem;
+	}
+
+	.contact-intro {
+		color: #cbd5e0;
+		margin-bottom: 2rem;
+		line-height: 1.6;
+	}
+
+	.info-items {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.info-item {
+		display: flex;
+		gap: 1rem;
+		align-items: start;
+	}
+
+	.info-icon {
+		font-size: 2rem;
+		flex-shrink: 0;
+	}
+
+	.info-item strong {
+		color: #a0c4e8;
+		display: block;
+		margin-bottom: 0.25rem;
+	}
+
+	.info-item p {
+		color: #cbd5e0;
+		margin: 0;
+	}
+
+	.contact-form-wrapper {
+		background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+		padding: 2.5rem;
+		border-radius: 16px;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.form-group label {
+		color: #a0c4e8;
+		font-weight: 500;
+		font-size: 0.95rem;
+	}
+
+	.form-group input,
+	.form-group select,
+	.form-group textarea {
+		padding: 0.875rem 1rem;
+		border-radius: 8px;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		background: rgba(255, 255, 255, 0.1);
+		color: #ffffff;
+		font-size: 1rem;
+		font-family: inherit;
+		transition: all 0.3s ease;
+	}
+
+	.form-group input:focus,
+	.form-group select:focus,
+	.form-group textarea:focus {
+		outline: none;
+		border-color: #4db8ff;
+		background: rgba(255, 255, 255, 0.15);
+	}
+
+	.form-group textarea {
+		resize: vertical;
+		min-height: 120px;
+	}
+
+	.submit-button {
+		background: linear-gradient(135deg, var(--color-accent) 0%, #1e5a8f 100%);
+		color: #ffffff;
+		padding: 1rem 2rem;
+		border: none;
+		border-radius: 8px;
+		font-size: 1.1rem;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	.submit-button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 24px rgba(77, 184, 255, 0.3);
+	}
+
+	@media (max-width: 968px) {
+		.contact {
+			padding: 4rem 0;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.contact-content {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+		}
+
+		.contact-form-wrapper {
+			padding: 2rem;
+		}
+	}
+</style>

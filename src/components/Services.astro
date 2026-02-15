@@ -1,0 +1,141 @@
+---
+// Services section
+const services = [
+	{
+		title: "Instalación de Sistemas Hidráulicos",
+		description: "Diseño e instalación profesional de sistemas hidráulicos completos para proyectos residenciales, comerciales e industriales.",
+		icon: "🔧"
+	},
+	{
+		title: "Mantenimiento Preventivo",
+		description: "Programas de mantenimiento preventivo para garantizar el óptimo funcionamiento de sus sistemas hidráulicos.",
+		icon: "⚙️"
+	},
+	{
+		title: "Reparación de Tuberías",
+		description: "Detección y reparación de fugas, reemplazo de tuberías dañadas y solución de problemas de presión de agua.",
+		icon: "🔨"
+	},
+	{
+		title: "Bombas de Agua",
+		description: "Instalación, mantenimiento y reparación de bombas de agua y sistemas de presurización.",
+		icon: "💧"
+	},
+	{
+		title: "Sistemas de Drenaje",
+		description: "Instalación y mantenimiento de sistemas de drenaje, desagües y alcantarillado.",
+		icon: "🚰"
+	},
+	{
+		title: "Asesoría Técnica",
+		description: "Consultoría especializada y asesoramiento técnico para proyectos hidráulicos de cualquier magnitud.",
+		icon: "📋"
+	}
+];
+---
+
+<section id="servicios" class="services">
+	<div class="container">
+		<div class="section-header">
+			<h2>Nuestros Servicios</h2>
+			<p>Soluciones profesionales para todas sus necesidades hidráulicas</p>
+		</div>
+		<div class="services-grid">
+			{services.map(service => (
+				<div class="service-card">
+					<div class="service-icon">{service.icon}</div>
+					<h3>{service.title}</h3>
+					<p>{service.description}</p>
+				</div>
+			))}
+		</div>
+	</div>
+</section>
+
+<style>
+	.services {
+		background: var(--color-dark);
+		padding: 6rem 0;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.section-header h2 {
+		font-size: 3rem;
+		color: #ffffff;
+		margin-bottom: 1rem;
+	}
+
+	.section-header p {
+		font-size: 1.25rem;
+		color: #a0c4e8;
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 2rem;
+	}
+
+	.service-card {
+		background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+		padding: 2.5rem;
+		border-radius: 16px;
+		transition: all 0.3s ease;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	.service-card:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 12px 32px rgba(30, 58, 95, 0.4);
+		border-color: rgba(160, 196, 232, 0.3);
+	}
+
+	.service-icon {
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.service-card h3 {
+		font-size: 1.5rem;
+		color: #ffffff;
+		margin-bottom: 1rem;
+	}
+
+	.service-card p {
+		color: #cbd5e0;
+		line-height: 1.6;
+	}
+
+	@media (max-width: 768px) {
+		.services {
+			padding: 4rem 0;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.section-header p {
+			font-size: 1.1rem;
+		}
+
+		.services-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.service-card {
+			padding: 2rem;
+		}
+	}
+</style>

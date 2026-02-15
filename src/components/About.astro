@@ -1,0 +1,204 @@
+---
+// About section
+---
+
+<section id="nosotros" class="about">
+	<div class="container">
+		<div class="about-content">
+			<div class="about-text">
+				<h2>Acerca de JYP Servicios Integrales</h2>
+				<p class="lead">
+					Somos una empresa especializada en servicios hidráulicos con amplia experiencia en el sector.
+				</p>
+				<p>
+					En JYP Servicios Integrales nos dedicamos a ofrecer soluciones completas y profesionales
+					para todas sus necesidades hidráulicas. Nuestro equipo de técnicos certificados cuenta con
+					años de experiencia y está comprometido con la excelencia en cada proyecto.
+				</p>
+				<p>
+					Trabajamos con los más altos estándares de calidad, utilizando equipos y materiales de primera
+					categoría para garantizar resultados duraderos y eficientes. Nuestro compromiso es brindar
+					un servicio confiable, puntual y profesional que supere las expectativas de nuestros clientes.
+				</p>
+
+				<div class="stats">
+					<div class="stat-item">
+						<div class="stat-number">500+</div>
+						<div class="stat-label">Proyectos Completados</div>
+					</div>
+					<div class="stat-item">
+						<div class="stat-number">10+</div>
+						<div class="stat-label">Años de Experiencia</div>
+					</div>
+					<div class="stat-item">
+						<div class="stat-number">100%</div>
+						<div class="stat-label">Satisfacción del Cliente</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="about-features">
+				<h3>¿Por qué elegirnos?</h3>
+				<ul class="features-list">
+					<li>
+						<span class="check">✓</span>
+						<div>
+							<strong>Experiencia Comprobada</strong>
+							<p>Años de trayectoria en el sector hidráulico</p>
+						</div>
+					</li>
+					<li>
+						<span class="check">✓</span>
+						<div>
+							<strong>Personal Certificado</strong>
+							<p>Técnicos capacitados y certificados</p>
+						</div>
+					</li>
+					<li>
+						<span class="check">✓</span>
+						<div>
+							<strong>Equipos Modernos</strong>
+							<p>Utilizamos tecnología de punta</p>
+						</div>
+					</li>
+					<li>
+						<span class="check">✓</span>
+						<div>
+							<strong>Garantía de Calidad</strong>
+							<p>Todos nuestros trabajos están garantizados</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.about {
+		background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-black) 100%);
+		padding: 6rem 0;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.about-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: start;
+	}
+
+	.about-text h2 {
+		font-size: 2.5rem;
+		color: #ffffff;
+		margin-bottom: 1.5rem;
+	}
+
+	.lead {
+		font-size: 1.25rem;
+		color: #a0c4e8;
+		margin-bottom: 1.5rem;
+		font-weight: 500;
+	}
+
+	.about-text p {
+		color: #cbd5e0;
+		margin-bottom: 1.5rem;
+		line-height: 1.8;
+	}
+
+	.stats {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+		margin-top: 3rem;
+		padding-top: 3rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.stat-item {
+		text-align: center;
+	}
+
+	.stat-number {
+		font-size: 2.5rem;
+		font-weight: 900;
+		color: #4db8ff;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		color: #a0c4e8;
+		font-size: 0.9rem;
+	}
+
+	.about-features {
+		background: rgba(255, 255, 255, 0.05);
+		padding: 2.5rem;
+		border-radius: 16px;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.about-features h3 {
+		font-size: 1.75rem;
+		color: #ffffff;
+		margin-bottom: 2rem;
+	}
+
+	.features-list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.features-list li {
+		display: flex;
+		gap: 1rem;
+		align-items: start;
+	}
+
+	.check {
+		color: #4db8ff;
+		font-size: 1.5rem;
+		font-weight: 700;
+		flex-shrink: 0;
+	}
+
+	.features-list strong {
+		color: #ffffff;
+		display: block;
+		margin-bottom: 0.25rem;
+	}
+
+	.features-list p {
+		color: #cbd5e0;
+		margin: 0;
+		font-size: 0.95rem;
+	}
+
+	@media (max-width: 968px) {
+		.about {
+			padding: 4rem 0;
+		}
+
+		.about-content {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+		}
+
+		.about-text h2 {
+			font-size: 2rem;
+		}
+
+		.stats {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+	}
+</style>

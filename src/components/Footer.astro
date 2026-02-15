@@ -1,0 +1,144 @@
+---
+// Footer component
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-content">
+			<div class="footer-section">
+				<div class="footer-logo">
+					<h3>JYP</h3>
+					<span>SERVICIOS INTEGRALES</span>
+				</div>
+				<p class="footer-description">
+					Soluciones profesionales en servicios hidráulicos para hogares, comercios e industrias.
+				</p>
+			</div>
+
+			<div class="footer-section">
+				<h4>Servicios</h4>
+				<ul>
+					<li><a href="#servicios">Instalación Hidráulica</a></li>
+					<li><a href="#servicios">Mantenimiento Preventivo</a></li>
+					<li><a href="#servicios">Reparación de Tuberías</a></li>
+					<li><a href="#servicios">Bombas de Agua</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-section">
+				<h4>Empresa</h4>
+				<ul>
+					<li><a href="#nosotros">Acerca de Nosotros</a></li>
+					<li><a href="#servicios">Nuestros Servicios</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-section">
+				<h4>Contacto</h4>
+				<ul class="contact-list">
+					<li>📞 +1 (555) 123-4567</li>
+					<li>📧 contacto@jypservicios.com</li>
+					<li>📍 Área Metropolitana</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>&copy; {currentYear} JYP Servicios Integrales. Todos los derechos reservados.</p>
+		</div>
+	</div>
+</footer>
+
+<style>
+	.footer {
+		background: linear-gradient(135deg, var(--color-black) 0%, var(--color-primary-dark) 100%);
+		padding: 4rem 0 2rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.footer-content {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 1.5fr;
+		gap: 3rem;
+		margin-bottom: 3rem;
+	}
+
+	.footer-logo h3 {
+		font-size: 2rem;
+		font-weight: 900;
+		color: #ffffff;
+		letter-spacing: 0.1em;
+		margin: 0 0 0.25rem 0;
+	}
+
+	.footer-logo span {
+		font-size: 0.7rem;
+		color: #a0c4e8;
+		letter-spacing: 0.2em;
+		font-weight: 500;
+	}
+
+	.footer-description {
+		color: #cbd5e0;
+		margin-top: 1rem;
+		line-height: 1.6;
+	}
+
+	.footer-section h4 {
+		color: #ffffff;
+		font-size: 1.1rem;
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.footer-section ul {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.footer-section a {
+		color: #cbd5e0;
+		transition: color 0.3s ease;
+	}
+
+	.footer-section a:hover {
+		color: #4db8ff;
+	}
+
+	.contact-list li {
+		color: #cbd5e0;
+		font-size: 0.95rem;
+	}
+
+	.footer-bottom {
+		padding-top: 2rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		text-align: center;
+	}
+
+	.footer-bottom p {
+		color: #a0c4e8;
+		font-size: 0.9rem;
+	}
+
+	@media (max-width: 968px) {
+		.footer {
+			padding: 3rem 0 1.5rem;
+		}
+
+		.footer-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+	}
+</style>
