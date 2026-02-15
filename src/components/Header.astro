@@ -5,10 +5,9 @@
 <header class="header">
 	<div class="container">
 		<div class="header-content">
-			<div class="logo">
-				<h1>JYP</h1>
-				<span>SERVICIOS INTEGRALES</span>
-			</div>
+			<a href="#inicio" class="logo">
+				<img src="/logo2.png" alt="JYP Servicios Integrales" />
+			</a>
 			<nav class="nav">
 				<a href="#inicio">Inicio</a>
 				<a href="#servicios">Servicios</a>
@@ -22,7 +21,7 @@
 <style>
 	.header {
 		background: linear-gradient(135deg, var(--color-black) 0%, var(--color-primary-dark) 100%);
-		padding: 1.5rem 0;
+		padding: 1rem 0;
 		position: sticky;
 		top: 0;
 		z-index: 1000;
@@ -42,24 +41,18 @@
 	}
 
 	.logo {
-		display: flex;
-		flex-direction: column;
-		gap: 0.25rem;
+		display: block;
+		transition: transform 0.3s ease;
 	}
 
-	.logo h1 {
-		font-size: 2rem;
-		font-weight: 900;
-		color: #ffffff;
-		letter-spacing: 0.1em;
-		margin: 0;
+	.logo:hover {
+		transform: scale(1.05);
 	}
 
-	.logo span {
-		font-size: 0.75rem;
-		color: #a0c4e8;
-		letter-spacing: 0.2em;
-		font-weight: 500;
+	.logo img {
+		height: 200px;
+		width: auto;
+		display: block;
 	}
 
 	.nav {
